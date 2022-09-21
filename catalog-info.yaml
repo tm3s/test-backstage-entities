@@ -9,6 +9,14 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: avaf-system
+  description: The avaf team
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: online-ui
@@ -170,3 +178,17 @@ spec:
       /sample:
         get:
           summary: List all samples
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kafka
+  description: Kafka description
+spec:
+  type: service
+  owner: avaf-sample-team
+  partOf: avaf-system
+  
+
