@@ -14,6 +14,7 @@ metadata:
   description: The avaf team
 spec:
   type: team
+  children: []
 
 ---
 apiVersion: backstage.io/v1alpha1
