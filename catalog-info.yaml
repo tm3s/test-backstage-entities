@@ -24,8 +24,8 @@ spec:
   lifecycle: production
   owner: avaf-sample-team
   partOf: avaf-system
-  dependsOn:
-    - kafka
+  # dependsOn:
+  #   - kafka
   consumesApis:
     - online-bff-api
     - e-contract-bff-api
@@ -43,8 +43,8 @@ spec:
   lifecycle: production
   owner: avaf-sample-team
   partOf: avaf-system
-  dependsOn:
-    - kafka
+  # dependsOn:
+  #   - kafka
   consumesApis:
     - online-bff-api
     - e-contract-bff-api
@@ -62,8 +62,8 @@ spec:
   lifecycle: production
   owner: avaf-sample-team
   partOf: avaf-system
-  dependsOn:
-    - kafka
+  # dependsOn:
+  #   - kafka
   consumesApis:
     - online-bff-api
     - e-contract-bff-api
