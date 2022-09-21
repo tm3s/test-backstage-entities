@@ -12,7 +12,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: online-ui
-  description: Online-ui-description-test
+  description: Online ui description test
 spec:
   type: website
   lifecycle: production
@@ -27,7 +27,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: e-contract-ui
-  description: e-contract-ui-description-test
+  description: e contract ui description test
 spec:
   type: website
   lifecycle: production
@@ -42,7 +42,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: deal-management-ui
-  description: deal-management-ui-description-test
+  description: deal management ui description test
 spec:
   type: website
   lifecycle: production
@@ -50,3 +50,45 @@ spec:
   partOf: avaf-system 
   consumesApis:
     - test
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: online-bff
+  description: online bff test
+spec:
+  type: service
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  providesApi: online-bff-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: e-contract-bff
+  description: e contract bff test
+spec:
+  type: service
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  providesApi: e-contract-bff-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: reference-data
+  description: reference data test
+spec:
+  type: service
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  providesApi: reference-data-api
