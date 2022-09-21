@@ -27,7 +27,10 @@ spec:
   owner: avaf-sample-team
   partOf: avaf-system 
   consumesApis:
-    - test
+    - online-bff-api
+    - e-contract-bff-api
+    - reference-data-api
+    - deal-management-bff-api
 
 ---
 
@@ -42,7 +45,10 @@ spec:
   owner: avaf-sample-team
   partOf: avaf-system 
   consumesApis:
-    - test
+    - online-bff-api
+    - e-contract-bff-api
+    - reference-data-api
+    - deal-management-bff-api
 
 ---
 
@@ -57,7 +63,10 @@ spec:
   owner: avaf-sample-team
   partOf: avaf-system 
   consumesApis:
-    - test
+    - online-bff-api
+    - e-contract-bff-api
+    - reference-data-api
+    - deal-management-bff-api
 
 ---
 
@@ -160,6 +169,46 @@ kind: API
 metadata:
   name: reference-data-api
   description: reference data test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: avaf-sample-team
+  system: avaf-system
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Sample API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /sample:
+        get:
+          summary: List all samples
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: deal-management-bff
+  description: deal management bff test
+spec:
+  type: service
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  providesApi: deal-management-bff-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: deal-management-bff-api
+  description: deal management bff test
 spec:
   type: openapi
   lifecycle: production
