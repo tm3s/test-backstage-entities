@@ -26,7 +26,7 @@ spec:
   type: website
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   # dependsOn:
   #   - kafka
   consumesApis:
@@ -45,7 +45,7 @@ spec:
   type: website
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   # dependsOn:
   #   - kafka
   consumesApis:
@@ -64,7 +64,7 @@ spec:
   type: website
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   # dependsOn:
   #   - kafka
   consumesApis:
@@ -83,7 +83,7 @@ spec:
   type: service
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   providesApi: online-bff-api
 
 ---
@@ -121,7 +121,7 @@ spec:
   type: service
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   providesApi: e-contract-bff-api
 
 ---
@@ -159,7 +159,7 @@ spec:
   type: service
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   providesApi: reference-data-api
 
 ---
@@ -197,7 +197,7 @@ spec:
   type: service
   lifecycle: production
   owner: avaf-sample-team
-  partOf: avaf-system
+  system: avaf-system
   providesApi: deal-management-bff-api
 
 ---
@@ -234,7 +234,7 @@ spec:
 # spec:
 #   type: service
 #   owner: avaf-sample-team
-#   partOf: avaf-system
+#   system: avaf-system
 # dependencyOf:
 #   - online-ui
 #   - e-contract-ui
