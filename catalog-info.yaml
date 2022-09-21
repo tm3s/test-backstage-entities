@@ -1,0 +1,52 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: avaf-system
+  description: Sample AVAF team
+spec:
+  owner: avaf-sample-team
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: online-ui
+  description: Online-ui-description-test
+spec:
+  type: website
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  consumesApis:
+    - test
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: e-contract-ui
+  description: e-contract-ui-description-test
+spec:
+  type: website
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  consumesApis:
+    - test
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: deal-management-ui
+  description: deal-management-ui-description-test
+spec:
+  type: website
+  lifecycle: production
+  owner: avaf-sample-team
+  partOf: avaf-system 
+  consumesApis:
+    - test
