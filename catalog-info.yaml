@@ -14,22 +14,22 @@ metadata:
   description: The avaf team
 
 ---
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: online-ui
-  description: Online ui description test
-spec:
-  type: website
-  lifecycle: production
-  owner: avaf-sample-team
-  partOf: avaf-system
-  dependsOn: kafka
-  consumesApis:
-    - online-bff-api
-    - e-contract-bff-api
-    - reference-data-api
-    - deal-management-bff-api
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+# metadata:
+#   name: online-ui
+#   description: Online ui description test
+# spec:
+#   type: website
+#   lifecycle: production
+#   owner: avaf-sample-team
+#   partOf: avaf-system
+#   dependsOn: kafka
+#   consumesApis:
+#     - online-bff-api
+#     - e-contract-bff-api
+#     - reference-data-api
+#     - deal-management-bff-api
 
 ---
 apiVersion: backstage.io/v1alpha1
