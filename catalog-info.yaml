@@ -12,6 +12,8 @@ kind: Group
 metadata:
   name: avaf-system
   description: The avaf team
+spec:
+  type: team
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -232,7 +234,7 @@ spec:
 #   type: service
 #   owner: avaf-sample-team
 #   partOf: avaf-system
-  # dependencyOf:
-  #   - online-ui
-  #   - e-contract-ui
-  #   - deal-management-ui
+# dependencyOf:
+#   - online-ui
+#   - e-contract-ui
+#   - deal-management-ui
