@@ -223,15 +223,15 @@ spec:
           summary: List all samples
 
 ---
-apiVersion: backstage.io/v1alpha1
-kind: Resource
-metadata:
-  name: kafka
-  description: Kafka description
-spec:
-  type: service
-  owner: avaf-sample-team
-  partOf: avaf-system
+# apiVersion: backstage.io/v1alpha1
+# kind: Resource
+# metadata:
+#   name: kafka
+#   description: Kafka description
+# spec:
+#   type: service
+#   owner: avaf-sample-team
+#   partOf: avaf-system
   # dependencyOf:
   #   - online-ui
   #   - e-contract-ui
