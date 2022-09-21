@@ -68,6 +68,32 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: online-bff-api
+  description: online bff test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: avaf-sample-team
+  system: avaf-system
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Sample API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /sample:
+        get:
+          summary: List all samples
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: e-contract-bff
@@ -82,6 +108,32 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: e-contract-bff-api
+  description: e contract bff test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: avaf-sample-team
+  system: avaf-system
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Sample API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /sample:
+        get:
+          summary: List all samples
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: reference-data
@@ -92,3 +144,29 @@ spec:
   owner: avaf-sample-team
   partOf: avaf-system 
   providesApi: reference-data-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: reference-data-api
+  description: reference data test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: avaf-sample-team
+  system: avaf-system
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Sample API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /sample:
+        get:
+          summary: List all samples
