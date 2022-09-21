@@ -7,7 +7,6 @@ spec:
   owner: avaf-sample-team
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -15,7 +14,6 @@ metadata:
   description: The avaf team
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -34,7 +32,6 @@ spec:
     - deal-management-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -53,7 +50,6 @@ spec:
     - deal-management-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -72,7 +68,6 @@ spec:
     - deal-management-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -86,7 +81,6 @@ spec:
   providesApi: online-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -112,7 +106,6 @@ spec:
           summary: List all samples
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -126,7 +119,6 @@ spec:
   providesApi: e-contract-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -152,7 +144,6 @@ spec:
           summary: List all samples
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -166,7 +157,6 @@ spec:
   providesApi: reference-data-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -192,7 +182,6 @@ spec:
           summary: List all samples
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -206,7 +195,6 @@ spec:
   providesApi: deal-management-bff-api
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -232,7 +220,6 @@ spec:
           summary: List all samples
 
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
