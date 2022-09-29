@@ -95,6 +95,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
+  owner: avaf-sample-team
   system: avaf-system
   definition: |
     openapi: "3.0.0"
@@ -132,6 +133,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
+  owner: avaf-sample-team
   system: avaf-system
   definition: |
     openapi: "3.0.0"
@@ -170,6 +172,7 @@ spec:
   type: openapi
   lifecycle: production
   system: avaf-system
+  owner: avaf-sample-team
   definition: |
     openapi: "3.0.0"
     info:
@@ -206,6 +209,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
+  owner: avaf-sample-team
   system: avaf-system
   definition: |
     openapi: "3.0.0"
